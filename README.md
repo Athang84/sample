@@ -30,16 +30,16 @@ This is a simple backend API to manage school students. It uses **Node.js** with
    - Description: Adds a new student record.
    - Request Body:
      ```json
-    [
-      {
-        "id" : 1,
-        "name" : "xyz",
-        "class" : "10-A",
-        "roll_no" : 1,
-        "school_id" : 1
-      }
-    ]
-    ```
+      [
+        {
+          "id" : 1,
+          "name" : "xyz",
+          "class" : "10-A",
+          "roll_no" : 1,
+          "school_id" : 1
+        }
+      ]
+      ```
    - Response:
      ```json
      {
