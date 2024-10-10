@@ -26,7 +26,7 @@ This is a simple backend API to manage school students. It uses **Node.js** with
       ...
     ]
     ```
-### 2. POST /students
+### 2.**POST /users**
    - Description: Adds a new student record.
    - Request Body:
      ```json
@@ -46,7 +46,7 @@ This is a simple backend API to manage school students. It uses **Node.js** with
        "message" : "user added succesfully",
      }
      ```
-### 3. PUT /students/:id
+### 3.**PUT /users/:id**
    - Description: Updates an existing student record based on ID.
    - Request Body: 
      ```json
@@ -66,5 +66,12 @@ This is a simple backend API to manage school students. It uses **Node.js** with
        "message" : "user data updated succesfully",
      }
      ```      
-     
+### 4.**DELETE /students/:id**
+   - Description: Deletes a student record based on ID.
+   - Response:
+     ```json
+     {
+       "message" : "user data updated succesfully",
+     }
+     ```       
 
