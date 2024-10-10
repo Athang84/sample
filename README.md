@@ -75,3 +75,23 @@ This is a simple backend API to manage school students. It uses **Node.js** with
      }
      ```       
 
+## Database
+
+- Type: The database used is PostgreSQL.
+- Schemas :
+  ```pg
+    CREATE TABLE School (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    registration_number VARCHAR(100) NOT NULL UNIQUE,
+    address VARCHAR(255) NOT NULL
+    );
+    
+    CREATE TABLE Users (
+        id SERIAL PRIMARY KEY,
+        student_name VARCHAR(255) NOT NULL,
+        class VARCHAR(50) NOT NULL,
+        roll_no INT NOT NULL,
+        school_id INT REFERENCES School(id)
+    );
+  ```
