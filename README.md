@@ -46,4 +46,25 @@ This is a simple backend API to manage school students. It uses **Node.js** with
        "message" : "user added succesfully",
      }
      ```
+### 3. PUT /students/:id
+   - Description: Updates an existing student record based on ID.
+   - Request Body: 
+     ```json
+      [
+        {
+          "id" : 1,
+          "name" : "xyz",
+          "class" : "10-A",
+          "roll_no" : 1,
+          "school_id" : 1
+        }
+      ]
+      ```
+  - Response :
+    ```json
+     {
+       "message" : "user data updated succesfully",
+     }
+     ```      
+     
 
