@@ -99,4 +99,7 @@ This is a simple backend API to manage school students. It uses **Node.js** with
 ## Middleware
 The application uses middleware for:
 - Validating User Existence: Ensures the if the given user exists or not.
-- Authenticating Owner: Changes like deletion and updation must only be done by the owner.  
+- Authenticating Owner: Changes like deletion and updation must only be done by the owner.
+
+## DotEnv
+This application uses .env files to store sensitive data.
