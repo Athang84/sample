@@ -95,3 +95,8 @@ This is a simple backend API to manage school students. It uses **Node.js** with
         school_id INT REFERENCES School(id)
     );
   ```
+
+## Middleware
+The application uses middleware for:
+- Validating User Existence: Ensures the if the given user exists or not.
+- Authenticating Owner: Changes like deletion and updation must only be done by the owner.  
